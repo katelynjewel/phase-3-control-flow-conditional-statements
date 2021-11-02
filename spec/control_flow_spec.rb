@@ -19,6 +19,16 @@ describe '#admin_login' do
 
 end
 
+def admin_login (username, password)
+  if username == "admin" password == "12345"
+    "Access granted"
+  elsif username == "ADMIN" password == "12345"
+    "Access granted"
+  else 
+    "Access granted"
+  end
+end
+
 describe '#hows_the_weather' do
   
   it 'returns "It\'s brisk out there!" if the temperature is below 40' do
